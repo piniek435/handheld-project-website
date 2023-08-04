@@ -34,7 +34,7 @@ exports.stripeWebhook = functions.https.onRequest(async (req, res) => {
 
     event = stripe.webhooks.constructEvent(req.rawBody, req.headers["stripe-signature"], whSec); // eslint-disable-line
   } catch (err) {
-    console.error("⚠️ Webhook signature verification failed.");
+    console.error("Signature error!");
     return res.sendStatus(400);
   }
 
