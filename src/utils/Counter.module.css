@@ -1,0 +1,9 @@
+.columnHeader {
+  color: #e9e0f5;
+  text-align: center;
+  font-family: Ubuntu, sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  position: relative;
+  top: -3rem;
+}

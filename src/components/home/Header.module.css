@@ -1,0 +1,57 @@
+.header {
+  margin: 9.8rem 8rem 5.2rem 8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header h2 {
+  color: #e9e0f5;
+  text-align: center;
+  text-shadow: 2px 2px 4px 0px rgba(164, 106, 240, 0.25);
+  font-family: Kanit, sans-serif;
+  font-size: 7.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+@media (max-width: 64em) {
+  .header {
+    margin: 9.8rem 0 5.2rem 0;
+  }
+  .header h2 {
+    font-size: 5.4rem;
+  }
+}
+
+@media (max-width: 40em) {
+  .header img {
+    scale: 0.5;
+  }
+  .header {
+    justify-content: flex-start;
+    position: relative;
+    left: -3rem;
+    margin: 5.2rem 0 5.2rem 0;
+  }
+  .right {
+    display: none;
+  }
+}
+
+@media (max-width: 26.5em) {
+  .header img {
+    scale: 0.3;
+  }
+  .header {
+    justify-content: flex-start;
+    position: relative;
+    left: -3rem;
+    margin: 5.2rem 0 5.2rem 0;
+  }
+  .header h2 {
+    position: relative;
+    left: -3rem;
+    font-size: 3.6rem;
+  }
+}

@@ -1,0 +1,252 @@
+.feature {
+  /* position: relative; */
+  height: 300vh;
+}
+
+.wrapper {
+  /* margin-top: 9.8rem; */
+  top: 10vh;
+}
+
+.header {
+  background: rgb(212, 184, 250);
+  background-image: linear-gradient(145deg, rgba(212, 184, 250, 1) 0%, rgba(126, 94, 242, 1) 100%);
+  background-size: 100%;
+  background-repeat: repeat;
+  font-family: Kanit, sans-serif;
+  font-size: 9.5rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+.text p {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(164, 106, 240, 0.25);
+  font-family: Kanit, sans-serif;
+  font-size: 6.1rem;
+}
+
+.text {
+  display: flex;
+  gap: 2.9rem;
+  align-items: baseline;
+}
+
+.main {
+  position: relative;
+  display: flex;
+}
+
+.mainText {
+  color: #fff;
+  text-shadow: 0px 1px 6px 0px rgba(80, 5, 242, 0.46);
+  font-family: Ubuntu, sans-serif;
+  font-size: 3.1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 4.1rem;
+  position: absolute;
+  width: auto;
+}
+.mainTextWide {
+  color: #fff;
+  text-shadow: 0px 1px 6px 0px rgba(80, 5, 242, 0.46);
+  font-family: Ubuntu, sans-serif;
+  font-size: 3.1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 4.1rem;
+  position: absolute;
+  width: auto;
+}
+.mainText strong,
+.mainTextWide strong {
+  background: rgb(212, 184, 250);
+  background-image: linear-gradient(145deg, rgba(212, 184, 250, 1) 0%, rgba(126, 94, 242, 1) 100%);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
+.gradient {
+  /* filter: blur(10px); */
+  position: absolute;
+  top: -10rem;
+  left: 60rem;
+  width: 59.1128rem;
+  height: 54.5029rem;
+  scale: 2;
+  transition: filter ease-in-out 0.3s;
+  z-index: -1;
+  filter: hue-rotate(0deg);
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.imgReplace {
+  position: absolute;
+  z-index: 1;
+}
+
+@media (max-width: 81em) {
+  .wrapper {
+    margin-top: 9.8rem;
+  }
+  .mainText,
+  .mainTextWide {
+    font-size: 2.6rem;
+    /* margin-right: -12rem; */
+  }
+}
+@media (max-width: 64em) {
+  .feature img,
+  .wrapper img {
+    scale: 90%;
+    left: -5%;
+    /* top: -10%; */
+  }
+
+  .feature {
+    margin-top: -10rem;
+  }
+
+  .gradient {
+    left: 64%;
+    width: 44rem;
+  }
+  .mainText,
+  .mainTextWide {
+    font-size: 2.3rem;
+    /* margin-right: -12rem; */
+  }
+  .header {
+    font-size: 7.6rem;
+    margin-bottom: -2rem;
+  }
+  .text {
+    flex-direction: column;
+    gap: 0;
+  }
+  /* .feature; */
+}
+
+@media (max-width: 55em) {
+  .feature img,
+  .wrapper img {
+    scale: 80%;
+    left: -15%;
+    /* top: -10%; */
+  }
+  .mainText,
+  .mainTextWide {
+    padding-bottom: -10rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .feature img,
+  .imgReplace {
+    scale: 70%;
+    left: -30%;
+    top: 0%;
+  }
+
+  .imgFirst {
+    top: 0;
+  }
+  .feature h1 {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 40em) {
+  .feature img,
+  .imgReplace {
+    scale: 60%;
+    left: -43%;
+    top: 0%;
+  }
+  .mainText,
+  .mainTextWide {
+    font-size: 2rem;
+  }
+  .gradient {
+    left: 104%;
+    top: -20%;
+    width: 22rem;
+  }
+}
+
+@media (max-width: 30em) {
+  .feature img,
+  .imgReplace {
+    scale: 40%;
+    left: -97%;
+    top: 0%;
+  }
+  .mainText,
+  .mainTextWide {
+    font-size: 2rem;
+  }
+  .gradient {
+    left: 104%;
+    top: -20%;
+    width: 22rem;
+  }
+}
+
+@media (max-width: 26.5em) {
+  .feature img,
+  .imgReplace {
+    scale: 39%;
+    left: -107%;
+    top: 0%;
+  }
+  .mainText,
+  .mainTextWide {
+    font-size: 2rem;
+  }
+  /* .mainText,
+  .mainTextWide {
+    font-size: 1.8rem;
+  } */
+  .feature h1 {
+    font-size: 5.4rem;
+  }
+  .text p {
+    font-size: 3.6rem;
+  }
+}
+
+@media (max-width: 23em) {
+  .feature img,
+  .imgReplace {
+    scale: 32%;
+    left: -149%;
+    top: 0%;
+  }
+  .mainText,
+  .mainTextWide {
+    font-size: 2rem;
+  }
+  .mainText,
+  .mainTextWide {
+    font-size: 1.8rem;
+  }
+  .feature h1 {
+    font-size: 5.4rem;
+  }
+  .text p {
+    font-size: 3.6rem;
+  }
+}

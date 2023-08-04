@@ -1,0 +1,129 @@
+.buyNow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: -29rem;
+}
+
+.buyNow p {
+  color: #e9e0f5;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(164, 106, 240, 0.25);
+  font-family: Kanit, sans-serif;
+  font-size: 9.5rem;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.buyNow strong {
+  background: linear-gradient(135deg, #d4b8fa 0%, #7e5ef2 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Kanit, sans-serif;
+  font-size: 9.5rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.btn {
+  margin-top: 3.6rem;
+  width: 42rem;
+  height: 13.2rem;
+  cursor: pointer;
+  border: none;
+  background: url("../../assets/Button1Big.svg");
+  transition: all ease-in-out 0.3s;
+}
+
+.btn--hover {
+  margin-top: 3.6rem;
+  width: 42rem;
+  height: 13.2rem;
+  cursor: pointer;
+  border: none;
+  transition: all ease-in-out 0.3s;
+  background: url("../../assets/Button1HoverBig.svg");
+}
+
+.btnFirefox {
+  margin-top: 3.6rem;
+  width: 42rem;
+  height: 13.2rem;
+  cursor: pointer;
+  border: none;
+  background: url("../../assets/Button1Big.svg");
+  transition: all ease-in-out 0.3s;
+}
+
+.btn--hoverFirefox {
+  opacity: 100%;
+  margin-top: 3.6rem;
+  width: 42rem;
+  height: 13.2rem;
+  filter: hue-rotate(10deg);
+  cursor: pointer;
+  border: none;
+  transition: all ease-in-out 0.3s;
+  background: url("../../assets/Button1Big.svg");
+}
+.btn--hover span,
+.btn span,
+.btn--hoverFirefox span,
+.btnFirefox span {
+  color: #fff;
+  font-family: Kanit, sans-serif;
+  font-size: 3.9rem;
+  font-weight: 600;
+}
+
+.buyNow img {
+  position: relative;
+  max-width: 125rem;
+  z-index: -1;
+}
+
+.buyNow svg {
+  fill: rgba(157, 133, 242, 1);
+  mix-blend-mode: difference;
+  filter: blur(10px);
+  position: relative;
+  top: -80rem;
+  right: -25vw;
+  width: 5rem;
+  height: 5rem;
+  z-index: -2;
+  scale: 12;
+}
+
+@media (max-width: 81em) {
+  .buyNow svg {
+    display: none;
+  }
+}
+
+@media (max-width: 64em) {
+  .buyNow img {
+    max-width: 64rem;
+    left: 0%;
+    scale: 1.1;
+  }
+  .buyNow p,
+  .buyNow strong {
+    font-size: 5.4rem;
+  }
+}
+
+@media (max-width: 40em) {
+  .buyNow button {
+    scale: 0.6;
+  }
+  .buyNow p,
+  .buyNow strong {
+    font-size: 4.4rem;
+  }
+  .buyNow img {
+    max-width: 40rem;
+    scale: 0.75;
+  }
+}

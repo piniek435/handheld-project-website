@@ -1,0 +1,107 @@
+.feature {
+  /* margin-top: 9.8rem; */
+  /* position: relative; */
+  height: 300vh;
+}
+
+.wrapper {
+  top: 10vh;
+  max-width: 76rem;
+  width: 76rem;
+}
+
+.header {
+  background: rgb(212, 184, 250);
+  background-image: linear-gradient(145deg, rgba(212, 184, 250, 1) 0%, rgba(126, 94, 242, 1) 100%);
+  background-size: 100%;
+  background-repeat: repeat;
+  font-family: Kanit, sans-serif;
+  font-size: 9.5rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+.text p {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(164, 106, 240, 0.25);
+  font-family: Kanit, sans-serif;
+  font-size: 6.1rem;
+}
+
+.text {
+  display: flex;
+  gap: 2.9rem;
+  align-items: baseline;
+}
+
+.main {
+  position: relative;
+  display: flex;
+}
+
+.mainText {
+  color: #fff;
+  text-shadow: 0px 1px 6px 0px rgba(80, 5, 242, 0.46);
+  font-family: Ubuntu, sans-serif;
+  font-size: 3.1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 4.1rem;
+  position: absolute;
+  width: 49.9rem;
+}
+.mainTextWide {
+  color: #fff;
+  text-shadow: 0px 1px 6px 0px rgba(80, 5, 242, 0.46);
+  font-family: Ubuntu, sans-serif;
+  font-size: 3.1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 4.1rem;
+  position: absolute;
+  width: 111.6rem;
+}
+.mainText strong,
+.mainTextWide strong {
+  background: rgb(212, 184, 250);
+  background-image: linear-gradient(145deg, rgba(212, 184, 250, 1) 0%, rgba(126, 94, 242, 1) 100%);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
+.gradient {
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  position: absolute;
+  top: -10rem;
+  left: 60rem;
+  width: 59.1128rem;
+  height: 54.5029rem;
+  scale: 2;
+  transition: filter ease-in-out 0.3s;
+  z-index: -1;
+  filter: hue-rotate(0deg);
+}
+
+.imgReplace {
+  position: absolute;
+  z-index: 1;
+}
+
+@media (max-width: 75em) {
+  /* .feature img {
+    scale: 1;
+  } */
+  /* .feature; */
+}

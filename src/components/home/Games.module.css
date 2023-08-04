@@ -1,0 +1,266 @@
+.tabs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab {
+  color: #e9e0f5;
+  text-align: center;
+  font-family: Ubuntu, sans-serif;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 500;
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: 24.3734rem;
+  position: relative;
+}
+
+.tabActive {
+  width: 24.3734rem;
+  border: none;
+  color: #0c172d;
+  text-align: center;
+  font-family: Ubuntu, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 1.65rem 2.4rem;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+
+.line {
+  width: 100%;
+  background: linear-gradient(135deg, #d4b8fa 0%, #7e5ef2 100%);
+  height: 0.6rem;
+}
+
+.lineBottom {
+  width: auto;
+  background: #ceb3f2;
+  height: 0.6rem;
+  margin-left: 4.8rem;
+  margin-right: 4.8rem;
+}
+
+.columns,
+.columnContainer,
+.columnsMobile {
+  display: flex;
+  align-items: flex-end;
+  max-height: 41rem;
+  min-height: 41rem;
+  justify-content: space-around;
+}
+
+.columnsMobile {
+  display: none;
+}
+
+.column {
+  width: 6.4332rem;
+  height: 41rem;
+  background: var(--feature, linear-gradient(110deg, #d4b8fa 0%, #7e5ef2 100%));
+  transition: all 0.5s ease-in-out;
+}
+
+.columnLower {
+  width: 6.4332rem;
+  height: 40.6913rem;
+  transition: all 0.5s ease-in-out;
+  background: #ceb3f2;
+}
+
+.bg {
+  height: 67.9287rem;
+  border-radius: 0rem 0rem 3.0983rem 3.0983rem;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.info {
+  padding-top: 2.4rem;
+  padding-bottom: 3.2rem;
+  color: #e9e0f5;
+  text-align: center;
+  font-family: Ubuntu, sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  padding-left: 3rem;
+}
+
+.info h5 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.settings,
+.settingsSmall {
+  position: relative;
+  left: 1rem;
+  margin-top: 1.6rem;
+  display: flex;
+  justify-content: space-around;
+  color: #e9e0f5;
+  font-family: Ubuntu, sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.settingsSmall {
+  display: none;
+}
+
+.legend {
+  position: relative;
+  right: -100rem;
+  top: -7.8rem;
+  /* width: 10rem; */
+  margin: 0;
+}
+
+.legend p {
+  position: relative;
+  left: 5rem;
+  width: 11.8769rem;
+  color: #e9e0f5;
+  font-family: Ubuntu;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.box1 {
+  width: 3.0983rem;
+  height: 3.0983rem;
+  background: var(--feature, linear-gradient(135deg, #d4b8fa 0%, #7e5ef2 100%));
+}
+.box2 {
+  width: 3.0983rem;
+  height: 3.0983rem;
+  background: #ceb3f2;
+  margin-top: 1.34rem;
+}
+
+.gradient {
+  fill: rgba(157, 133, 242, 1);
+  mix-blend-mode: difference;
+  filter: blur(10px);
+  position: relative;
+  top: -40rem;
+  left: -45vw;
+  width: 15rem;
+  height: 10rem;
+  z-index: -2;
+  scale: 12;
+}
+
+.rtSmall {
+  display: none;
+}
+
+@media (max-width: 81em) {
+  .tab,
+  .tabActive {
+    font-size: 1.8rem;
+  }
+  .legend {
+    right: -78%;
+  }
+}
+
+@media (max-width: 64em) {
+  .legend {
+    right: -70%;
+    max-width: 10rem;
+  }
+  .columnContainer {
+    justify-content: space-evenly;
+  }
+  .column,
+  .columnLower {
+    width: 3.6rem;
+  }
+}
+
+@media (max-width: 40em) {
+  .legend {
+    right: -4%;
+    max-width: 10rem;
+  }
+  .columnContainer {
+    justify-content: space-evenly;
+  }
+  .column,
+  .columnLower {
+    width: 1.9rem;
+  }
+  .columns {
+    justify-content: space-evenly;
+  }
+  .tab,
+  .tabActive {
+    font-size: 1.5rem;
+  }
+  .legend p {
+    font-size: 1.5rem;
+  }
+  .columnsMobile {
+    display: flex;
+    margin-top: -5rem;
+  }
+  .columns {
+    display: none;
+  }
+  .info {
+    text-align: end;
+    margin-right: 1rem;
+  }
+  .settingsSmall {
+    font-size: 1.5rem;
+  }
+  .gradient {
+    /* scale: 0.1; */
+    left: -140%;
+  }
+  .columnContainer p {
+    font-size: 1.5rem;
+  }
+  .settingsSmall {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .settings {
+    display: none;
+  }
+  .bg {
+    height: 64.9287rem;
+  }
+}
+
+@media (max-width: 26.5em) {
+  .tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tab,
+  .tabActive {
+    width: 100%;
+    height: 4rem;
+    padding: 0;
+    text-align: center;
+  }
+  .tabActive {
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+  .lineBottom {
+    margin: 0;
+  }
+  .columns {
+    justify-content: space-between;
+    margin: 0 1rem;
+  }
+  .gradient {
+    /* scale: 0.1; */
+    left: -224%;
+  }
+}

@@ -1,0 +1,21 @@
+.notFound h1 {
+  background: linear-gradient(145deg, #d4b8fa 20%, #7e5ef2 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(164, 106, 240, 0.25);
+  font-family: Kanit, sans-serif;
+  font-size: 9.5rem;
+  font-weight: 600;
+  padding-top: 7.6rem;
+}
+
+.notFound h2 {
+  color: #e9e0f5;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(164, 106, 240, 0.25);
+  font-family: Kanit, sans-serif;
+  font-size: 6.1rem;
+  font-weight: 600;
+}

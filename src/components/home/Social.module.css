@@ -1,0 +1,122 @@
+.bgDarker {
+  background: #0a1224;
+  position: absolute;
+  width: 200vw;
+  height: 47.1rem;
+  left: -50vw;
+  top: 2.9rem;
+  z-index: -1;
+}
+
+.social {
+  position: relative;
+  margin-top: 20rem;
+}
+
+.social h2 {
+  padding-top: 6.5rem;
+  color: #e9e0f5;
+  text-shadow: 2px 2px 4px rgba(164, 106, 240, 0.25);
+  font-family: Kanit, sans-serif;
+  font-size: 6.4rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.icons {
+  margin-top: 5rem;
+  display: flex;
+  gap: 27rem;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 7.2rem;
+}
+
+.icons p {
+  color: #e9e0f5;
+  text-align: center;
+  font-family: Kanit;
+  font-size: 3.1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.icon {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon:hover {
+  scale: 1.1;
+}
+
+@media (max-width: 81em) {
+  .icons {
+    gap: 20.4rem;
+  }
+}
+
+@media (max-width: 64em) {
+  .icons {
+    gap: 2.4rem;
+  }
+  .bgDarker {
+    margin-left: -20rem;
+    width: 127%;
+    left: 0;
+  }
+  .social {
+    margin-top: 30rem;
+  }
+}
+
+@media (max-width: 56em) {
+  .bgDarker {
+    margin-left: -16.5rem;
+    width: 127%;
+    left: 0;
+  }
+}
+
+@media (max-width: 48em) {
+  .bgDarker {
+    margin-left: -13rem;
+    width: 127%;
+    left: 0;
+  }
+}
+
+@media (max-width: 40em) {
+  .icon {
+    scale: 0.5;
+  }
+  .icon:hover {
+    scale: 0.6;
+  }
+  .icons {
+    margin-top: 0;
+    padding-bottom: 0;
+    gap: 0;
+  }
+  .social h2 {
+    font-size: 5.4rem;
+  }
+}
+
+@media (max-width: 26.5em) {
+  .icons {
+    flex-direction: column;
+    margin-bottom: 4rem;
+  }
+  .bgDarker {
+    height: 84rem;
+    width: 137%;
+  }
+  .icon {
+    height: 15rem;
+  }
+  .social h2 {
+    font-size: 3.6rem;
+  }
+}

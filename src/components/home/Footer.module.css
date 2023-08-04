@@ -1,0 +1,84 @@
+.bgDarkest {
+  background: #070e1b;
+  position: absolute;
+  width: 200vw;
+  height: 28rem;
+  left: -50vw;
+  /* top: -10rem; */
+  z-index: -1;
+}
+
+.footer {
+  display: flex;
+  padding-bottom: -5rem;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.footer h2 {
+  text-align: left;
+  text-shadow: 0.25rem 0.25rem 0.5rem rgba(164, 106, 240, 0.25);
+  font-family: Kanit, sans-serif;
+  font-size: 7.6rem;
+  font-weight: 600;
+  line-height: normal;
+  background: var(--feature, linear-gradient(135deg, #d4b8fa 0%, #7e5ef2 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 29rem;
+}
+
+.footer p {
+  color: #e9e0f5;
+  text-align: right;
+  font-family: Ubuntu, sans-serif;
+  font-size: 3.1rem;
+  line-height: normal;
+}
+
+.footer h3 {
+  position: relative;
+  top: -10px;
+  color: #e9e0f5;
+  font-family: Kanit;
+  font-size: 3.9rem;
+  font-style: italic;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.copyright {
+  color: #e9e0f5;
+  text-align: center;
+  font-family: Ubuntu, sans-serif;
+  font-size: 1.6rem;
+  margin-top: 3.6rem;
+}
+
+@media (max-width: 64em) {
+  .bgDarkest {
+    width: 100%;
+    left: 0;
+  }
+  .footer h2 {
+    margin-right: 0;
+  }
+  .footer h3 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 40em) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer P {
+    text-align: center;
+    font-size: 2.4rem;
+  }
+  .bgDarkest {
+    height: 36rem;
+  }
+}

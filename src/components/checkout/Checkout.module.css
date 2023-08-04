@@ -1,0 +1,272 @@
+.header {
+  background: rgb(212, 184, 250);
+  background-image: linear-gradient(145deg, rgba(212, 184, 250, 1) 0%, rgba(126, 94, 242, 1) 100%);
+  background-size: 100%;
+  background-repeat: repeat;
+  font-family: Kanit, sans-serif;
+  font-size: 9.5rem;
+  background-clip: text;
+  font-weight: 500;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+.text h1 {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(164, 106, 240, 0.25);
+  font-family: Kanit;
+  font-size: 6.1rem;
+  font-weight: 400;
+}
+
+.text {
+  display: flex;
+  gap: 1.6rem;
+  align-items: baseline;
+}
+
+.parcels {
+  display: flex;
+  gap: 2.1rem;
+  margin-top: 2rem;
+  margin-left: 6.7rem;
+  flex-wrap: wrap;
+}
+
+.parcel {
+  width: 15.3rem;
+  height: 13.5rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.25);
+  position: relative;
+  cursor: pointer;
+}
+
+.parcelSelected {
+  background: url("../../assets/activeParcel.svg");
+}
+
+.parcel h3 {
+  color: #e9e0f5;
+  text-align: center;
+  font-family: Ubuntu, sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 0.6rem;
+}
+
+.parcel p {
+  color: #e9e0f5;
+  font-family: Ubuntu, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  line-height: normal;
+}
+
+.parcel svg {
+  position: absolute;
+  background: url("../../assets/selectOff.svg");
+  width: 2.5rem;
+  height: 2.5rem;
+  left: 10px;
+  top: 10px;
+}
+
+.parcelSelected svg {
+  background: url("../../assets/selectOn.svg");
+}
+
+/* */
+
+.payments {
+  display: grid;
+  grid-template-columns: 30rem 30rem;
+  gap: 3rem;
+  margin-top: 2rem;
+  margin-left: 6.7rem;
+}
+
+.payment {
+  width: 30rem;
+  height: 4.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  align-content: center;
+  background: rgba(0, 0, 0, 0.25);
+  position: relative;
+  cursor: pointer;
+}
+
+.paymentSelected {
+  background: url("../../assets/activePayment.svg");
+  background-size: contain;
+}
+
+.payment h3 {
+  color: #e9e0f5;
+  text-align: left;
+  font-family: Ubuntu, sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.payment svg {
+  position: absolute;
+  background: url("../../assets/selectOff.svg");
+  width: 2.5rem;
+  height: 2.5rem;
+  left: 265px;
+  top: 10px;
+}
+
+.paymentSelected svg {
+  background: url("../../assets/selectOn.svg");
+}
+
+.payment img {
+  margin-left: 1.5rem;
+  margin-right: 0.9rem;
+}
+
+.checkout {
+  display: flex;
+  margin-bottom: 20rem;
+}
+
+.cart {
+  margin-left: 7rem;
+  margin-top: 7rem;
+  width: 47.3rem;
+  height: 47.3rem;
+  border-radius: 3.0905rem;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.cart h3 {
+  margin-left: 4rem;
+  margin-top: 3rem;
+  font-family: Kanit, sans-serif;
+  font-size: 3.9rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background: var(--feature, linear-gradient(135deg, #d4b8fa 0%, #7e5ef2 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cart p {
+  color: #e9e0f5;
+  font-family: Ubuntu;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 3.8rem;
+  line-height: normal;
+}
+
+.cart img {
+  width: 21.9rem;
+  margin-left: 3.8rem;
+  height: 12.2rem;
+}
+
+.cart div {
+  margin-bottom: 3rem;
+}
+
+.btn--hover:disabled,
+.btn--hoverFirefox:disabled,
+.btnFirefox:disabled {
+  background: url("../../assets/Button1Inactive.svg");
+  cursor: not-allowed;
+}
+
+.btn {
+  margin-top: 3.6rem;
+  width: 21rem;
+  height: 7.4rem;
+  cursor: pointer;
+  border: none;
+  background: url("../../assets/Button1.svg");
+  transition: all ease-in-out 0.3s;
+}
+
+.btn--hover {
+  margin-top: 3.6rem;
+  width: 21rem;
+  height: 7.4rem;
+  cursor: pointer;
+  border: none;
+  transition: all ease-in-out 0.3s;
+  background: url("../../assets/Button1Hover.svg");
+}
+
+.btnFirefox {
+  margin-top: 3.6rem;
+  width: 21rem;
+  height: 7.4rem;
+  cursor: pointer;
+  border: none;
+  background: url("../../assets/Button1.svg");
+  transition: all ease-in-out 0.3s;
+}
+
+.btn--hoverFirefox {
+  opacity: 100%;
+  margin-top: 3.6rem;
+  width: 21rem;
+  height: 7.4rem;
+  filter: hue-rotate(10deg);
+  cursor: pointer;
+  border: none;
+  transition: all ease-in-out 0.3s;
+  background: url("../../assets/Button1.svg");
+}
+
+.btn--hover span,
+.btn span,
+.btn--hoverFirefox span,
+.btnFirefox span {
+  color: #fff;
+  font-family: Kanit, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.error {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #ff477e;
+}
+
+@media (max-width: 64em) {
+  .checkout {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 48em) {
+  .cart {
+    margin-left: 0;
+    width: auto;
+    margin-top: 0;
+  }
+  .text h1 {
+    font-size: 4rem;
+  }
+  .payments {
+    grid-template-columns: 1fr;
+  }
+}

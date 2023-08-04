@@ -1,0 +1,58 @@
+.reviews {
+  display: flex;
+  gap: 10rem;
+}
+.review {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-direction: column;
+}
+
+.review h3 {
+  color: #e9e0f5;
+  text-align: center;
+  font-family: Kanit, sans-serif;
+  font-size: 2.896rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.review img {
+  width: 16rem;
+}
+
+.review blockquote {
+  color: #e9e0f5;
+  text-align: center;
+  font-family: Ubuntu, sans-serif;
+  font-size: 1.6089rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.logo {
+  scale: 0.8;
+}
+
+@media (max-width: 81em) {
+  .reviews {
+    display: grid;
+    gap: 6rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 40em) {
+  .reviews {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 26.5em) {
+  .reviews {
+    grid-template-columns: 1fr;
+  }
+}

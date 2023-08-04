@@ -1,0 +1,243 @@
+.store {
+  display: grid;
+  grid-template-columns: 66.4rem auto;
+  grid-template-rows: 43.6rem 43.6rem;
+  column-gap: 8.3rem;
+  margin-top: 6.1rem;
+}
+
+.productImg {
+  width: 66.4rem;
+  flex-shrink: 0;
+}
+
+.details {
+  margin-top: 3.9rem;
+  margin-bottom: -3rem;
+}
+
+.storeHeader,
+.storeHeaderSmall {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(164, 106, 240, 0.25);
+  font-family: Kanit, sans-serif;
+  font-size: 3.9rem;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.storeHeaderSmall {
+  display: none;
+}
+
+.price {
+  text-shadow: 2px 2px 4px rgba(164, 106, 240, 0.25);
+  font-family: Kanit, sans-serif;
+  font-size: 3.9rem;
+  font-weight: 600;
+  line-height: normal;
+  background: linear-gradient(135deg, #d4b8fa 0%, #7e5ef2 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.select {
+  color: #e9e0f5;
+  text-shadow: 2px 2px 4px rgba(164, 106, 240, 0.25);
+  font-family: Kanit, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 3.1rem;
+}
+
+.colors {
+  display: flex;
+  margin-top: 1.1rem;
+  position: relative;
+  gap: 3.6rem;
+}
+
+.checkMark {
+  cursor: pointer;
+  position: absolute;
+  top: 13px;
+}
+
+.colors svg {
+  cursor: pointer;
+}
+
+.specs {
+  display: flex;
+  gap: 17.4rem;
+  padding-left: 4.2rem;
+  padding-top: 3.5rem;
+  margin-top: -6rem;
+  width: 66.4rem;
+  height: 51.5rem;
+  flex-shrink: 0;
+  border-radius: 3.0905rem;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.specs h4 {
+  color: #fff;
+  font-family: Ubuntu;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.specs p {
+  color: #fff;
+  font-family: Ubuntu;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.btn {
+  margin-top: -3.6rem;
+  width: 21rem;
+  height: 7.4rem;
+  cursor: pointer;
+  border: none;
+  background: url("../../assets/Button1.svg");
+  transition: all ease-in-out 0.3s;
+}
+
+.btn--hover {
+  margin-top: -3.6rem;
+  opacity: 100%;
+  width: 21rem;
+  height: 7.4rem;
+  cursor: pointer;
+  border: none;
+  transition: all ease-in-out 0.3s;
+  background: url("../../assets/Button1Hover.svg");
+}
+
+.btnFirefox {
+  margin-top: 3.6rem;
+  width: 21rem;
+  height: 7.4rem;
+  cursor: pointer;
+  border: none;
+  background: url("../../assets/Button1.svg");
+  transition: all ease-in-out 0.3s;
+}
+
+.btn--hoverFirefox {
+  opacity: 100%;
+  margin-top: 3.6rem;
+  width: 21rem;
+  height: 7.4rem;
+  filter: hue-rotate(10deg);
+  cursor: pointer;
+  border: none;
+  transition: all ease-in-out 0.3s;
+  background: url("../../assets/Button1.svg");
+}
+
+.btn--hover span,
+.btn span,
+.btn--hoverFirefox span,
+.btnFirefox span {
+  color: #fff;
+  font-family: Kanit, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.ToCartContainer {
+  margin-top: -2.4rem;
+}
+
+.features {
+  margin-top: 4.6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 4.7rem;
+}
+
+.features p {
+  color: #e9e0f5;
+  font-family: Ubuntu, sans-serif;
+  font-size: 2.1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 67.5em) {
+  .store {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: 0;
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: -9rem;
+  }
+  .specs {
+    max-width: 100%;
+    position: relative;
+    margin-top: 10rem;
+    margin-bottom: 2.4rem;
+  }
+  .store button {
+    position: relative;
+    left: 10rem;
+  }
+  .ToCartContainer {
+    /* background-color: aliceblue; */
+    grid-row: 3;
+    margin-top: -17rem;
+  }
+}
+
+@media (max-width: 40em) {
+  .specs {
+    width: auto;
+    gap: 8rem;
+    height: auto;
+  }
+  .store {
+    margin-top: -9rem;
+  }
+  .storeHeader {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 26.5em) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+  .store button {
+    /* position: relative; */
+    left: 0%;
+    margin-top: 1.6rem;
+  }
+  .storeHeader {
+    display: none;
+  }
+  .storeHeaderSmall {
+    display: block;
+  }
+  .specs {
+    flex-direction: column;
+    width: auto;
+    gap: 0rem;
+    height: auto;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+  }
+}

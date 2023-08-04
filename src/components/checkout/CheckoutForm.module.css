@@ -1,0 +1,269 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.header {
+  color: #e9e0f5;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(164, 106, 240, 0.25);
+  font-family: Kanit, sans-serif;
+  font-size: 6.1rem;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 6.1rem;
+  margin-bottom: 2.4rem;
+}
+
+.form {
+  display: flex;
+  margin-left: 6.8rem;
+  flex-wrap: wrap;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 3.4rem;
+  align-items: end;
+}
+
+.inputContainer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  border-radius: 0.5rem;
+}
+
+.inputContainer label {
+  color: #e9e0f5;
+  text-align: left;
+  font-family: Kanit, sans-serif;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.inputContainer input,
+.inputContainer textarea,
+.inputContainer select {
+  width: 30rem;
+  height: 4.5rem;
+  background: rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 0.5rem;
+  color: #e9e0f5;
+
+  text-align: left;
+  font-family: Ubuntu;
+  font-size: 1.6rem;
+  padding-left: 1rem;
+  line-height: normal;
+}
+
+.inputContainer input:active,
+.inputContainer input:focus,
+.inputContainer textarea:active,
+.inputContainer textarea:focus,
+.inputContainer select:active,
+.inputContainer select:focus {
+  background: rgba(0, 0, 0, 0.5);
+  outline: solid 1px #9747ff;
+}
+
+.content textarea {
+  padding-top: 1rem;
+  width: 55.1rem;
+  height: 39.6rem;
+}
+
+.filled input,
+.filled textarea,
+.filled select {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.invalid input,
+.invalid textarea,
+.invalid select {
+  outline: solid 1px #ff477e !important;
+  border-radius: 0.5rem 0 0.5rem 0.5rem;
+}
+
+.errorIndicator {
+  border-radius: 0.5rem 0rem 0.5rem 0rem;
+  background: #ff477e;
+  position: absolute;
+  width: 20rem;
+  height: 1.9rem;
+
+  top: 6.4rem;
+  left: 10.1rem;
+
+  color: #fff;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.errorIndicatorAddress {
+  left: 43.3rem;
+}
+.errorIndicatorPostalCode {
+  width: 10rem;
+  left: 8.5rem;
+}
+.errorIndicatorCity {
+  left: 22.5rem;
+}
+
+.btn--hover:disabled,
+.btn--hoverFirefox:disabled,
+.btnFirefox:disabled {
+  background: url("../../assets/Button1Inactive.svg");
+  cursor: not-allowed;
+}
+
+.btn {
+  margin-top: 3.6rem;
+  width: 21rem;
+  height: 7.4rem;
+  cursor: pointer;
+  border: none;
+  background: url("../../assets/Button1.svg");
+  transition: all ease-in-out 0.3s;
+}
+
+.btn--hover {
+  margin-top: 3.6rem;
+  width: 21rem;
+  height: 7.4rem;
+  cursor: pointer;
+  border: none;
+  transition: all ease-in-out 0.3s;
+  background: url("../../assets/Button1Hover.svg");
+}
+
+.btnFirefox {
+  margin-top: 3.6rem;
+  width: 21rem;
+  height: 7.4rem;
+  cursor: pointer;
+  border: none;
+  background: url("../../assets/Button1.svg");
+  transition: all ease-in-out 0.3s;
+}
+
+.btn--hoverFirefox {
+  opacity: 100%;
+  margin-top: 3.6rem;
+  width: 21rem;
+  height: 7.4rem;
+  filter: hue-rotate(10deg);
+  cursor: pointer;
+  border: none;
+  transition: all ease-in-out 0.3s;
+  background: url("../../assets/Button1.svg");
+}
+
+.btn--hover span,
+.btn span,
+.btn--hoverFirefox span,
+.btnFirefox span {
+  color: #fff;
+  font-family: Kanit, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.error {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #ff477e;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.5rem;
+  row-gap: 2.3rem;
+}
+
+.address {
+  margin-top: 2.4rem;
+  width: 63.3rem;
+  grid-column: 1/-1;
+}
+
+.address input {
+  width: 63.3rem;
+}
+
+.postal,
+.postal input {
+  width: 18.5rem;
+}
+
+.lastContainer {
+  grid-column: 1/-1;
+  display: flex;
+  gap: 2.3rem;
+}
+
+.city,
+.city input {
+  width: 42.5rem;
+}
+
+.form button {
+  position: absolute;
+  margin-top: 85rem;
+}
+
+.info {
+  position: relative;
+  top: 50rem;
+}
+
+.loading {
+  position: absolute;
+  left: 7rem;
+  top: -7rem;
+  font-size: 3rem;
+}
+
+@media (max-width: 48em) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .address input {
+    width: 30rem;
+  }
+  .lastContainer {
+    flex-direction: column;
+  }
+  .city,
+  .city input {
+    width: 30rem;
+  }
+  .errorIndicatorCity,
+  .errorIndicatorAddress {
+    left: 10rem;
+  }
+  .form button {
+    top: 169rem;
+  }
+  .info {
+    top: 62rem;
+  }
+}

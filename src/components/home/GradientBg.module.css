@@ -1,0 +1,84 @@
+.blobs {
+  z-index: -1;
+  /* opacity: 0.75; */
+  filter: blur(250px);
+  mix-blend-mode: difference;
+  position: absolute;
+  left: 80%;
+  top: 15rem;
+  /* max-width: 120rem; */
+}
+
+.blob1 {
+  left: -130rem;
+  top: -24rem;
+  position: absolute;
+  width: 59.1128rem;
+  height: 54.5029rem;
+  animation: move-around 24s linear infinite;
+  transition-timing-function: ease-in-out;
+  transition: top 3s ease, left 3s ease;
+}
+.blob2 {
+  position: absolute;
+  left: -61rem;
+  top: -24rem;
+  width: 56.5rem;
+  height: 62rem;
+  animation: move-around 24s linear infinite;
+  transition-timing-function: ease-in-out;
+  transition: top 3s ease, left 3s ease;
+  animation-delay: -6s;
+}
+.blob3 {
+  position: absolute;
+  left: -61rem;
+  top: -24rem;
+  width: 60.8764rem;
+  height: 60.0595rem;
+  transform: rotate(48.52deg);
+  animation: move-around 24s linear infinite;
+  transition-timing-function: ease-in-out;
+  animation-delay: -12s;
+  transition: top 3s ease, left 3s ease;
+}
+.blob4 {
+  position: absolute;
+  left: -61rem;
+  top: -24rem;
+  width: 59.1128rem;
+  height: 54.5029rem;
+  animation: move-around 24s linear infinite;
+  transition-timing-function: ease-in-out;
+  animation-delay: -16s;
+  transition: top 3s ease, left 3s ease;
+}
+
+@keyframes move-around {
+  0% {
+    left: -130rem;
+    top: -24rem;
+  }
+  25% {
+    left: -61rem;
+    top: -24rem;
+  }
+  50% {
+    left: -61rem;
+    top: 19rem;
+  }
+  75% {
+    left: -130rem;
+    top: 19rem;
+  }
+  100% {
+    left: -130rem;
+    top: -24rem;
+  }
+}
+
+@media (max-width: 40em) {
+  .blobs {
+    scale: 0.5;
+  }
+}

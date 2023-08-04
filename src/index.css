@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  max-width: 100%;
+}
+
+body {
+  background-color: #0c172d;
+  font-family: "Ubuntu", sans-serif;
+  /* overflow-x: hidden; */
+  line-height: 1;
+  font-weight: 400;
+  max-width: 100%;
+  position: relative;
+  color: #e9e0f5;
+}
+
+@media (max-width: 48em) {
+  /* html,
+  body {
+    max-width: 97%;
+  } */
+}

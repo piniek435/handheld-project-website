@@ -1,0 +1,50 @@
+.blobs {
+  z-index: -1;
+  opacity: 0.75;
+  -webkit-backface-visibility: hidden;
+  /* -moz-backface-visibility: hidden; */
+  -webkit-transform: translate3d(0, 0, 0);
+  /* -moz-transform: translate3d(0, 0, 0); */
+  filter: blur(150px);
+  mix-blend-mode: difference;
+  position: relative;
+  left: 105%;
+  top: 15rem;
+  background-color: aliceblue;
+}
+
+.blob1 {
+  left: -120rem;
+  top: -24rem;
+  position: absolute;
+  width: 59.1128rem;
+  height: 54.5029rem;
+}
+.blob2 {
+  position: absolute;
+  left: -71rem;
+  top: -24rem;
+  width: 56.5rem;
+  height: 62rem;
+}
+.blob3 {
+  position: absolute;
+  left: -71rem;
+  top: 19rem;
+  width: 60.8764rem;
+  height: 60.0595rem;
+}
+.blob4 {
+  position: absolute;
+  left: -120rem;
+  top: 19rem;
+  width: 59.1128rem;
+  height: 54.5029rem;
+}
+
+@media (max-width: 40em) {
+  .blobs {
+    scale: 0.5;
+    left: 90%;
+  }
+}
