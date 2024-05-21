@@ -17,6 +17,11 @@ export default function Store({ isFirefox }) {
     navigate(`/checkout?color=${color}`);
   };
 
+  const handleAction = (event) => {
+    if (event.type === "click" || (event.type === "keydown" && event.key === "Enter")) {
+      setColor(event.target.className.baseVal);
+    }
+  };
   return (
     <section className={styles.store}>
       <Renders color={color} className={styles.productImg} />
@@ -33,7 +38,7 @@ export default function Store({ isFirefox }) {
           {color === "Czarny" && <img src={check} className={styles.checkMark} style={{ left: "13px" }} />}
           {color === "Biały" && <img src={check} className={styles.checkMark} style={{ left: "111px" }} />}
           {color === "Niebieski" && <img src={check} className={styles.checkMark} style={{ left: "209px" }} />}
-          <svg onClick={() => setColor("Czarny")} xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
+          <svg className="Czarny" tabIndex="0" onKeyDown={handleAction} onClick={() => setColor("Czarny")} xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
             <circle cx="31" cy="31" r="30.5" fill="url(#paint0_linear_204_46)" stroke="#7E5EF2" />
             <defs>
               <linearGradient id="paint0_linear_204_46" x1="31" y1="0" x2="31" y2="62" gradientUnits="userSpaceOnUse">
@@ -42,7 +47,7 @@ export default function Store({ isFirefox }) {
               </linearGradient>
             </defs>
           </svg>
-          <svg onClick={() => setColor("Biały")} xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
+          <svg className="Biały" onKeyDown={handleAction} tabIndex="0" onClick={() => setColor("Biały")} xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
             <circle cx="31" cy="31" r="30.5" fill="url(#paint0_linear_204_48)" stroke="#7E5EF2" />
             <defs>
               <linearGradient id="paint0_linear_204_48" x1="31" y1="0" x2="31" y2="62" gradientUnits="userSpaceOnUse">
@@ -51,7 +56,7 @@ export default function Store({ isFirefox }) {
               </linearGradient>
             </defs>
           </svg>
-          <svg onClick={() => setColor("Niebieski")} xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
+          <svg className="Niebieski" onKeyDown={handleAction} tabIndex="0" onClick={() => setColor("Niebieski")} xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
             <circle cx="31" cy="31" r="30.5" fill="url(#paint0_linear_204_47)" stroke="#7E5EF2" />
             <defs>
               <linearGradient id="paint0_linear_204_47" x1="31" y1="0" x2="31" y2="62" gradientUnits="userSpaceOnUse">
@@ -64,13 +69,13 @@ export default function Store({ isFirefox }) {
       </div>
       <div className={styles.specs}>
         <div>
-          <h4>OS</h4>
+          <h4>System operacyjny</h4>
           <p>Windows 11 Home</p>
           <br />
-          <h4>CPU</h4>
+          <h4>Procesor</h4>
           <p>AMD Ryzen™ Z1 Extreme</p>
           <br />
-          <h4>GPU</h4>
+          <h4>Grafika</h4>
           <p>AMD RDNA™ 3</p>
           <br />
           <h4>Wyświetlacz</h4>
@@ -92,9 +97,9 @@ export default function Store({ isFirefox }) {
           <h4>Pamięć</h4>
           <p>512GB NVMe™ M.2 SSD</p>
           <br />
-          <h4>Bezpieczństwo</h4>
+          <h4>Bezpieczeństwo</h4>
           <p>
-            Czujnik linii papilarnych
+            Czytnik linii papilarnych
             <br />
             Microsoft Pluton Security
           </p>

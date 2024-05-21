@@ -72,7 +72,7 @@ export default function Feature({ isChromium }) {
         </div>
         <div className={styles.main}>
           <motion.p style={{ display: display1, x: x1, opacity: opacity1 }} className={styles.mainText}>
-            PlayJet One wyróżnia się imponującą wydajnością dzięki zastosowaniu potężnego procesora oraz szybkiej pamięci GDDR5. Procesor <strong>AMD Ryzen</strong> o wysokiej mocy obliczeniowej zapewnia płynne działanie, szybkie ładowanie i płynność w wymagających grach.
+            PlayJet One wyróżnia się imponującą wydajnością dzięki zastosowaniu potężnego procesora oraz szybkiej pamięci GDDR5. Procesor <strong>AMD Ryzen</strong> o wysokiej mocy obliczeniowej zapewnia płynne działanie, szybką transmisję danych i płynność w wymagających grach.
           </motion.p>
           <motion.p style={{ display: display2, x: x2, opacity: opacity2 }} className={styles.mainTextWide}>
             System operacyjny <strong>Windows 11</strong> jest nowoczesny i intuicyjny w obsłudze. Wyposażony w zaawansowane funkcje i optymalizacje, zapewnia płynność działania, szybkie uruchamianie aplikacji i gier oraz łatwą nawigację po interfejsie zapewniając przy tym szeroką kompatybilnością
@@ -83,8 +83,8 @@ export default function Feature({ isChromium }) {
             ekran ten zapewnia niesamowite wrażenia wizualne, które ożywiają treści na ekranie.
           </motion.p>
           <motion.p style={{ display: display4, x: x4, opacity: opacity4 }} className={styles.mainTextWide}>
-            <strong style={{ textTransform: "none" }}>BATERIA 5600mAh</strong> pozwala na długi czas działania na jednym ładowaniu pozwala na korzystanie z urządzenia przez dłuższy czas bez potrzeby częstego ładowania. Dzięki temu możesz spokojnie korzystać z produktu w podróży, w pracy czy w czasie
-            rozrywki, bez obaw o wyczerpanie baterii.
+            <strong style={{ textTransform: "none" }}>BATERIA 5600mAh</strong> pozwala na długi czas działania na jednym ładowaniu pozwala na korzystanie z urządzenia przez dłuższy czas bez potrzeby częstego ładowania. Dzięki temu możesz spokojnie korzystać z produktu w podróży, bez obaw o
+            wyczerpanie baterii.
           </motion.p>
           <motion.img style={{ x, y, scale }} src={render1} alt="Game console with game screenshot on screen"></motion.img>
           <motion.img style={{ x, y, scale, opacity: opacity2Img, position: `absolute`, zIndex: 1 }} src={render2} alt="Game console with Windows 11 screenshot on screen"></motion.img>

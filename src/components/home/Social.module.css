@@ -45,6 +45,12 @@
 .icon {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
 }
 
 .icon:hover {

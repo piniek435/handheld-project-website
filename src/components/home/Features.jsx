@@ -12,7 +12,7 @@ export default function Features() {
           <img src={windows} alt="Windows logo" />
           <div>
             <h3>Windows 11</h3>
-            <p>Najnowsza wersja zapewnia wysoką wydajność oraz dostęp do wszystkich gier i aplikacji.</p>
+            <p>Najnowsza wersja zapewnia wysoką wydajność oraz dostęp do szerokiej gamy gier i aplikacji.</p>
           </div>
         </div>
         <div className={styles.feature}>

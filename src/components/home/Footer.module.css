@@ -57,6 +57,25 @@
   margin-top: 3.6rem;
 }
 
+.tooltip {
+  position: absolute;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 5px 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 100;
+  && a {
+    color: white !important;
+  }
+}
+
 @media (max-width: 64em) {
   .bgDarkest {
     width: 100%;

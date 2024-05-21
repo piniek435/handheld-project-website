@@ -49,24 +49,24 @@ export default function Checkout({ isFirefox }) {
           <h1 style={{ marginLeft: "1.8rem" }}>/Metoda wysyłki</h1>
         </div>
         <div className={styles.parcels}>
-          <div onClick={() => onClickParcel("DPD")} className={selectedParcel === "DPD" ? selectedParcelClasses : styles.parcel}>
+          <button onClick={() => onClickParcel("DPD")} className={selectedParcel === "DPD" ? selectedParcelClasses : styles.parcel}>
             <img src={parcel} />
             <h3>DPD</h3>
             <p>2 dni robocze</p>
             <svg />
-          </div>
-          <div onClick={() => onClickParcel("DHL")} className={selectedParcel === "DHL" ? selectedParcelClasses : styles.parcel}>
+          </button>
+          <button onClick={() => onClickParcel("DHL")} className={selectedParcel === "DHL" ? selectedParcelClasses : styles.parcel}>
             <img src={parcel} />
             <h3>DHL</h3>
             <p>2 dni robocze</p>
             <svg />
-          </div>
-          <div onClick={() => onClickParcel("Pocztex")} className={selectedParcel === "Pocztex" ? selectedParcelClasses : styles.parcel}>
+          </button>
+          <button onClick={() => onClickParcel("Pocztex")} className={selectedParcel === "Pocztex" ? selectedParcelClasses : styles.parcel}>
             <img src={parcel} />
             <h3>Pocztex</h3>
             <p>2 dni robocze</p>
             <svg />
-          </div>
+          </button>
         </div>
         <div style={{ marginTop: "6.2rem" }} className={styles.text}>
           <p className={styles.header}>2</p>
@@ -78,26 +78,26 @@ export default function Checkout({ isFirefox }) {
           <h1>/Sposób płatności</h1>
         </div>
         <div className={styles.payments}>
-          <div onClick={() => onClickPayment("card")} className={selectedPayment === "card" ? selectedPaymentClasses : styles.payment}>
+          <button onClick={() => onClickPayment("card")} className={selectedPayment === "card" ? selectedPaymentClasses : styles.payment}>
             <img src={card} />
             <h3>Karta płatnicza</h3>
             <svg />
-          </div>
-          <div onClick={() => onClickPayment("paypal")} className={selectedPayment === "paypal" ? selectedPaymentClasses : styles.payment}>
+          </button>
+          <button onClick={() => onClickPayment("paypal")} className={selectedPayment === "paypal" ? selectedPaymentClasses : styles.payment}>
             <img style={{ position: "relative", top: "2px" }} src={payPal} />
             <h3>PayPal</h3>
             <svg />
-          </div>
-          <div onClick={() => onClickPayment("blik")} className={selectedPayment === "blik" ? selectedPaymentClasses : styles.payment}>
+          </button>
+          <button onClick={() => onClickPayment("blik")} className={selectedPayment === "blik" ? selectedPaymentClasses : styles.payment}>
             <img src={blik} style={{ width: 12, height: 18, marginRight: "2.2rem" }} />
             <h3>Blik</h3>
             <svg />
-          </div>
-          <div onClick={() => onClickPayment("p24")} className={selectedPayment === "p24" ? selectedPaymentClasses : styles.payment}>
+          </button>
+          <button onClick={() => onClickPayment("p24")} className={selectedPayment === "p24" ? selectedPaymentClasses : styles.payment}>
             <img src={bank} />
             <h3>Przelewy 24</h3>
             <svg />
-          </div>
+          </button>
         </div>
       </div>
       <div className={styles.cart}>

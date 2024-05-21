@@ -12,13 +12,13 @@ export default function Reviews() {
         <img src={ign} alt="IGN Logo" />
         <h3>IGN</h3>
         <img src={fiveStars} alt="Five stars" />
-        <blockquote>"Jego wydajność i szybkość działania zapewniają niezawodność i płynne działanie, co przekłada się na efektywność w codziennych zadaniach."</blockquote>
+        <blockquote>"Jego wydajność i system zapewniają niezawodność i płynne działanie, co przekłada się na wyjątkową przyjemność z grania."</blockquote>
       </div>
       <div className={styles.review}>
         <img className={styles.logo} src={gryOnline} alt="Gry online logo" />
         <h3>Gry-Online</h3>
         <img src={fiveStars} alt="Five stars" />
-        <blockquote>"Ten produkt oferuje innowacyjne rozwiązania, które sprawiają, że korzystanie z niego jest przyjemnością podczas rozrywki."</blockquote>
+        <blockquote>"Ten produkt oferuje innowacyjne rozwiązania, które sprawiają, że korzystanie z niego jest przyjemnością."</blockquote>
       </div>
       <div className={styles.review}>
         <img className={styles.logo} src={eurogamer} alt="Eurogamer logo" />

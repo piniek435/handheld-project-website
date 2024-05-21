@@ -9,18 +9,18 @@ export default function Social() {
       <div className={styles.bgDarker} />
       <h2>Dołącz do nas</h2>
       <div className={styles.icons}>
-        <div className={styles.icon}>
+        <button className={styles.icon}>
           <img alt="Twitter logo" src={twitter} />
           <p>Twitter</p>
-        </div>
-        <div className={styles.icon}>
+        </button>
+        <button className={styles.icon}>
           <img alt="TikTok logo" src={tiktok} />
           <p style={{ position: "relative", left: "-8px" }}>TikTok</p>
-        </div>
-        <div className={styles.icon}>
+        </button>
+        <button className={styles.icon}>
           <img alt="YouTube logo" src={youtube} />
           <p>YouTube</p>
-        </div>
+        </button>
       </div>
     </section>
   );
